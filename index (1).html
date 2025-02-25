@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deca-Tech & Yopan Fasturl</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .container2 {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #06c;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        } 
+        
+        .pencarian {
+            margin-bottom: 20px;
+        }
+        
+        .pencarian input[type="text"] {
+            width: 50%;
+            height: 30px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #06c;
+        }
+        
+        .pencarian button {
+            height: 30px;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .barang {
+            margin-bottom: 20px;
+            padding: 20px;
+            border-bottom: 1px solid #06c;
+            display: none;
+        }
+        
+        .barang.tampil {
+            display: block;
+        }
+        
+        .barang h2 {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .barang p {
+            margin-bottom: 20px;
+        }
+        
+        .barang .harga {
+            font-weight: bold;
+            color: #06c;
+        }
+        
+        .barang .tambah-kart {
+            background-color: #06c;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .barang .tambah-kart:hover {
+            background-color: #06c;
+        }
+
+        .barang .copy-produk {
+            background-color: #06c;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .barang .copy-produk:hover {
+            background-color: #06c;
+        }
+        
+        .form-login {
+            margin-bottom: 20px;
+        }
+        
+        .form-login input[type="text"], .form-login input[type="password"] {
+            width: 100%;
+            height: 40px;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        
+        .form-login button[type="submit"] {
+            width: 100%;
+            height: 40px;
+            background-color: #06c;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .isi-web {
+            display: none;
+            position: absolute;
+            top: 10%;
+            left: 0;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container2" id="login-container2">
+        <h1>Login</h1>
+        <form class="form-login" id="form-login">
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <div class="isi-web" id="isi-web">
+      <h2>Total 32 Fitur (Free User)</h2>
+      <h1>Search Case By Tech-Fasturl</h1>
+        <div class="pencarian">
+            <input type="text" id="cari" placeholder="Cari Case...">
+            <button onclick="cariProduk()">Cari</button>
+            <a href="https://wa.me/+62881026358641?text=thanks+webnya+ya+bng"><button class="tambah-kart">Support</button></a>
+        </div>
+        <div class="barang-list">
+            <!-- Barang 1 -->
+            <div class="barang" id="barang-1">
+                <h2>Case Ping</h2>
+                <p>Memunculkan Kecepatan bot</p>
+                <p class="harga">Free</p>
+            <a href="https://wa.me/message/VOUBXPJSKX5PI1"><button class="tambah-kart">Error? Hub</button></a>
+                  <button class="copy-produk" onclick="copyProduk(this)">Copy Case</button>
+            <textarea id="produk-1" style="display: none;">case "ping": case "uptime": {
+let timestamp = speed();
+let latensi = speed() - timestamp;
+let tio = await nou.os.oos();
+var tot = await nou.drive.info();
+let respon = `
+*🔴 INFORMATION SERVER*
+
+*• Platform :* ${nou.os.type()}
+*• Total Ram :* ${formatp(os.totalmem())}
+*• Total Disk :* ${tot.totalGb} GB
+*• Total Cpu :* ${os.cpus().length} Core
+*• Runtime Vps :* ${runtime(os.uptime())}
+
+*🔵 INFORMATION BOTZ*
+
+*• Respon Speed :* ${latensi.toFixed(4)} detik
+*• Runtime Bot :* ${runtime(process.uptime())}
+`
+await m.reply(respon)
+}
+break</textarea>
+        </div>
+            </div>
+            <!-- Barang 2 -->
+            <div class="barang" id="barang-2">
+                <h2>Case Play</h2>
+                <p>Play Yt Mp4 & Mp3</p>
+                <p class="harga">Free</p>
+            <a href="https://wa.me/message/VOUBXPJSKX5PI1"><button class="tambah-kart">Error? Hub</button></a>
+                  <button class="copy-produk" onclick="copyProduk(this)">Copy Case</button>
+            <textarea id="produk-2" style="display: none;">case "play": {
+if (!text) return m.reply(example("dj tiktok"))
+await Sky.sendMessage(m.chat, {react: {text: '⏱', key: m.key}})
+let ytsSearch = await yts(text)
+const res = await ytsSearch.all[0]
+
+var anu = await ytdl.ytmp3(`${res.url}`)
+
+if (anu.status) {
+let urlMp3 = anu.download.url
+await Sky.sendMessage(m.chat, {audio: {url: urlMp3}, mimetype: "audio/mpeg", contextInfo: { externalAdReply: {thumbnailUrl: res.thumbnail, title: res.title, body: `Author ${res.author.name} || Duration ${res.timestamp}`, sourceUrl: res.url, renderLargerThumbnail: true, mediaType: 1}}}, {quoted: m})
+} else {
+return m.reply("Error! Result Not Found")
+}
+await Sky.sendMessage(m.chat, {react: {text: '', key: m.key}})
+}
+break</textarea>
+            </div>
+            <!-- Barang 3 -->
+            <div class="barang" id="barang-3">
+                <h2>Case Tt</h2>
+                <p>Download Vid Tt</p>
+                <p class="harga">Free</p>
+            <a href="https://wa.me/message/VOUBXPJSKX5PI1"><button class="tambah-kart">Error? Hub</button></a>
+             <button class="copy-produk" onclick="copyProduk(this)">Copy Case</button>
+                        <textarea id="produk-3" style="display: none;">case "tt": case "tiktok": {
+if (!text) return m.reply(example("url"))
+if (!text.startsWith("https://")) return m.reply(example("url"))
+await Sky.sendMessage(m.chat, {react: {text: '⏱', key: m.key}})
+await tiktokDl(q).then(async (result) => {
+if (!result.status) return m.reply("Error!")
+if (result.durations == 0 && result.duration == "0 Seconds") {
+let araara = new Array()
+let urutan = 0
+for (let a of result.data) {
+let imgsc = await prepareWAMessageMedia({ image: {url: `${a.url}`}}, { upload: Sky.waUploadToServer })
+await araara.push({
+header: proto.Message.InteractiveMessage.Header.fromObject({
+title: `Foto Slide Ke *${urutan += 1}*`, 
+hasMediaAttachment: true,
+...imgsc
+}),
+nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.fromObject({
+buttons: [{                  
+"name": "cta_url",
+"buttonParamsJson": `{\"display_text\":\"Link Tautan Foto\",\"url\":\"${a.url}\",\"merchant_url\":\"https://www.google.com\"}`
+}]
+})
+})
+}
+const msgii = await generateWAMessageFromContent(m.chat, {
+viewOnceMessageV2Extension: {
+message: {
+messageContextInfo: {
+deviceListMetadata: {},
+deviceListMetadataVersion: 2
+}, interactiveMessage: proto.Message.InteractiveMessage.fromObject({
+body: proto.Message.InteractiveMessage.Body.fromObject({
+text: "*Tiktok Downloader ✅*"
+}),
+carouselMessage: proto.Message.InteractiveMessage.CarouselMessage.fromObject({
+cards: araara
+})
+})}
+}}, {userJid: m.sender, quoted: m})
+await Sky.relayMessage(m.chat, msgii.message, { 
+messageId: msgii.key.id 
+})
+} else {
+let urlVid = await result.data.find(e => e.type == "nowatermark_hd" || e.type == "nowatermark")
+await Sky.sendMessage(m.chat, {video: {url: urlVid.url}, mimetype: 'video/mp4', caption: `*Tiktok Downloader ✅*`}, {quoted: m})
+}
+}).catch(e => console.log(e))
+await Sky.sendMessage(m.chat, {react: {text: '', key: m.key}})
+}
+break></textarea>
+            </div>
+            <!-- Barang 4 -->
+            <div class="barang" id="barang-4">
+                <h2>Case Ig</h2>
+                <p>Download Vid Ig</p>
+                <p class="harga">Free</p>
+            <a href="https://wa.me/message/VOUBXPJSKX5PI1"><button class="tambah-kart">Error? Hub</button></a>
+             <button class="copy-produk" onclick="copyProduk(this)">Copy Case</button>
+                        <textarea id="produk-4" style="display: none;">case "instagram": case "igdl": case "ig": {
+if (!text) return m.reply(example("linknya"))
+if (!text.startsWith('https://')) return m.reply("Link tautan tidak valid")
+await Sky.sendMessage(m.chat, {react: {text: '⏱', key: m.key}})
+await fetchJson(`https://btch.us.kg/download/igdl?url=${text}`).then(async (res) => {
+if (!res.status) return m.reply("Error! Result Not Found")
+await Sky.sendMessage(m.chat, {video: {url: res.result[0].url}, mimetype: "video/mp4", caption: "*Instagram Downloader ✅*"}, {quoted: m})
+}).catch((e) => m.reply("Error! Result Not Found"))
+await Sky.sendMessage(m.chat, {react: {text: '', key: m.key}})
+}
+break></textarea>
+            </div>
+           <!-- Barang 5 -->
+            <div class="barang" id="barang-5">
+                <h2>Case Ssweb</h2>
+                <p>Menampilkan Web Via Jpg/Png</p>
+                <p class="harga">Free</p>
+            <a href="https://wa.me/message/VOUBXPJSKX5PI1"><button class="tambah-kart">Error? Hub</button></a>
+             <button class="copy-produk" onclick="copyProduk(this)">Copy Case</button>
+                        <textarea id="produk-5" style="display: none;">case "ssweb": {
+if (!text) return m.reply(example("https://example.com"))
+if (!isUrl(text)) return m.reply(example("https://example.com"))
+const {
+  screenshotV1, 
+  screenshotV2,
+  screenshotV3 
+} = require('getscreenshot.js')
+const fs = require('fs')
+var data = await screenshotV2(text)
+await Sky.sendMessage(m.chat, { image: data, mimetype: "image/png"}, {quoted: m})
+}
+break</textarea>
+        </div>
+             <!-- Barang 6 -->
+            <div class="barang" id="barang-6">
+                <h2>Case Rvo/Readviewone</h2>
+                <p>Lihat Gambar/Foto Sekali Lihat</p>
+                <p class="harga">Free</p>
+            <a href="https://wa.me/message/VOUBXPJSKX5PI1"><button class="tambah-kart">Error? Hub</button></a>
+             <button class="copy-produk" onclick="copyProduk(this)">Copy Case</button>
+                        <textarea id="produk-6" style="display: none;">case "rvo": case "readviewonce": {
+if (!m.quoted) return m.reply(example("dengan reply pesannya"))
+let msg = m.quoted.message
+    let type = Object.keys(msg)[0]
+if (!msg[type].viewOnce) return m.reply("Pesan itu bukan viewonce!")
+    let media = await downloadContentFromMessage(msg[type], type == 'imageMessage' ? 'image' : type == 'videoMessage' ? 'video' : 'audio')
+    let buffer = Buffer.from([])
+    for await (const chunk of media) {
+        buffer = Buffer.concat([buffer, chunk])
+    }
+    if (/video/.test(type)) {
+        return Sky.sendMessage(m.chat, {video: buffer, caption: msg[type].caption || ""}, {quoted: m})
+    } else if (/image/.test(type)) {
+        return Sky.sendMessage(m.chat, {image: buffer, caption: msg[type].caption || ""}, {quoted: m})
+    } else if (/audio/.test(type)) {
+        return Sky.sendMessage(m.chat, {audio: buffer, mimetype: "audio/mpeg", ptt: true}, {quoted: m})
+    } 
+}
+break</textarea>
+            </div>
+                        <!-- Barang 7 -->
+            <div class="barang" id="barang-7">
+                <h2>Case Upsw</h2>
+                <p>Upload Sw Dengan Bot</p>
+                <p class="harga">Free</p>
+            <a href="https://wa.me/message/VOUBXPJSKX5PI1"><button class="tambah-kart">Error? Hub</button></a>
+             <button class="copy-produk" onclick="copyProduk(this)">Copy Case</button>
+                        <textarea id="produk-7" style="display: none;">case 'upsw': {
+    if (!isOwner) return reply(mess.owner)
+    let teks;
+    if (args.length >= 1) {
+        teks = args.slice(0).join(" ");
+    } else if (m.quoted && m.quoted.text) {
+        teks = m.quoted.text;
+    }
+
+    if (!m.quoted) return reply('❌ Reply media yang ingin dijadikan status!')
+
+    try {
+        const mtype = m.quoted.mtype;
+        let type;
+
+        if (mtype === "audioMessage") {
+            type = "vn";
+        } else if (mtype === "videoMessage") {
+            type = "vid"; 
+        } else if (mtype === "imageMessage") {
+            type = "img";
+        } else if (mtype === "extendedTextMessage") {
+            type = "txt";
+        } else {
+            return reply("❌ Media type tidak valid!");
+        }
+
+        const doc = {};
+
+        if (type === "vn") {
+            const link = await m.quoted.download();
+            doc.mimetype = m.quoted.mimetype;
+            doc.audio = link;
+            doc.ptt = true;
+
+        } else if (type === "vid") {
+            const link = await m.quoted.download();
+            doc.mimetype = m.quoted.mimetype;
+            doc.caption = teks;
+            doc.video = link;
+
+        } else if (type === "img") {
+            const link = await m.quoted.download();
+            doc.mimetype = m.quoted.mimetype;
+            doc.caption = teks;
+            doc.image = link;
+
+        } else if (type === "txt") {
+            doc.text = teks;
+        }
+
+        // Fungsi untuk mendapatkan warna hex acak
+        const getRandomHexColor = () => {
+            return '#' + Math.floor(Math.random()*16777215).toString(16);
+        };
+
+        // Kirim status broadcast
+        await Raol404.sendMessage("status@broadcast", doc, {
+            backgroundColor: getRandomHexColor(),
+            font: Math.floor(Math.random() * 9),
+            statusJidList: Object.keys(store.contacts)
+        })
+        .then(() => {
+            reply(`✅ Berhasil upload ${type} ke status!`);
+        })
+        .catch((err) => {
+            console.error(err);
+            reply(`❌ Gagal upload ${type} ke status!`);
+        });
+
+    } catch (err) {
+        console.error(err);
+        reply('❌ Terjadi kesalahan saat memproses media!');
+    }
+}
+break</textarea>
+            </div>
+                                    <!-- Barang 8 -->
+            <div class="barang" id="barang-8">
+                <h2>Case Tourl</h2>
+                <p>Mengubah Foto/Vid Jadi Link</p>
+                <p class="harga">Free</p>
+            <a href="https://wa.me/message/VOUBXPJSKX5PI1"><button class="tambah-kart">Error? Hub</button></a>
+             <button class="copy-produk" onclick="copyProduk(this)">Copy Case</button>
+                        <textarea id="produk-8" style="display: none;">case 'tourl': {
+async function uploadwidipe(poto) {
+  const axios = require("axios");
+const fs = require("fs");
+const FormData = require("form-data");
+const path = require('path');
+    try {
+      const mime = require('mime-types');
+  const form = new FormData();
+  const contentType = mime.lookup(poto);
+  const fileName = path.basename(poto);
+  form.append('file', fs.createReadStream(poto), {
+    contentType: contentType || 'application/octet-stream',
+    filename: fileName,
+  });
+      const response = await axios.post('https://cdn.elxyzgpt.xyz/', form, {
+        headers: form.getHeaders(),
+        onUploadProgress: (progressEvent) => {
+          if (progressEvent.lengthComputable) {
+            console.log(`🚀 Upload Progress: ${(progressEvent.loaded * 100) / progressEvent.total}%`);
+          }
+        }
+      });
+    const hasilnya = response.data.fileUrl
+      console.log('🎉 File Upload Success:', response.data);
+      return hasilnya;
+    } catch (error) {
+      console.error('🚫 Upload Failed:', error);
+      reject(error);
+    }
+}
+  try {
+    const media = await NanoBotz.downloadAndSaveMediaMessage(quoted);
+    const anuu = await uploadwidipe(media);
+    replynano(`📮 *L I N K :*
+${anuu}
+📊 *S I Z E :* ${media.length} Byte
+📛 *E x p i r e d :* No Expiry Date`);
+    await fs.unlinkSync(media);
+  } catch (error) {
+    console.error('Error:', error);
+    replynano('Error uploading file.');
+  }
+}
+  break;</textarea>
+            </div>
+                                    <!-- Barang 9 -->
+            <div class="barang" id="barang-9">
+                <h2>Case Jpm Ht</h2>
+                <p>Promosi Ke Grup Dengan Tag</p>
+                <p class="harga">Free</p>
+            <a href="https://wa.me/message/VOUBXPJSKX5PI1"><button class="tambah-kart">Error? Hub</button></a>
+             <button class="copy-produk" onclick="copyProduk(this)">Copy Case</button>
+                        <textarea id="produk-9" style="display: none;">case "jpmhidetag": case "jpmht": case "jpmh": {
+if (!isCreator) return Akses(mess.owner)
+if (!q) return m.reply(example("teksnya"))
+let allgrup = await Sky.groupFetchAllParticipating()
+let res = await Object.keys(allgrup)
+let count = 0
+const jid = m.chat
+const teks = text
+await m.reply(`Memproses *jpm* teks Ke ${res.length} grup`)
+for (let i of res) {
+if (global.db.groups[i] && global.db.groups[i].blacklistjpm && global.db.groups[i].blacklistjpm == true) continue
+try {
+await Sky.sendMessage(i, {text: `${teks}`, mentions: allgrup[i].participants.map(e => e.id)}, {quoted: qlocJpm})
+count += 1
+} catch {}
+await sleep(global.delayJpm)
+}
+await Sky.sendMessage(jid, {text: `*Jpm Telah Selsai ✅*\nTotal grup yang berhasil dikirim pesan : ${count}`}, {quoted: m})
+}
+break</textarea>
+            </div>
+                                    <!-- Barang 10 -->
+            <div class="barang" id="barang-10">
+                <h2>Case Jpm</h2>
+                <p>Promosi Ke Grub Tanpa Tag</p>
+                <p class="harga">Free</p>
+            <a href="https://wa.me/message/VOUBXPJSKX5PI1"><button class="tambah-kart">Error? Hub</button></a>
+             <button class="copy-produk" onclick="copyProduk(this)">Copy Case</button>
+                        <textarea id="produk-10" style="display: none;">case "jpm": {
+if (!isCreator) return Akses(mess.owner)
+if (!q) return m.reply(example("teksnya"))
+let allgrup = await Sky.groupFetchAllParticipating()
+let res = await Object.keys(allgrup)
+let count = 0
+const jid = m.chat
+const teks = text
+await m.reply(`Memproses *jpm* teks Ke ${res.length} grup`)
+for (let i of res) {
+if (global.db.groups[i] && global.db.groups[i].blacklistjpm && global.db.groups[i].blacklistjpm == true) continue
+try {
+await Sky.sendMessage(i, {text: `${teks}`}, {quoted: qlocJpm})
+count += 1
+} catch {}
+await sleep(global.delayJpm)
+}
+await Sky.sendMessage(jid, {text: `*Jpm Telah Selsai ✅*\nTotal grup yang berhasil dikirim pesan : ${count}`}, {quoted: m})
+}
+break</textarea>
+            </div>
+                                    <!-- Barang 11 -->
+            <div class="barang" id="barang-11">
+                <h2>Case Jpm Foto</h2>
+                <p>Promosi Ke Grub Dengan Foto</p>
+                <p class="harga">Free</p>
+            <a href="https://wa.me/message/VOUBXPJSKX5PI1"><button class="tambah-kart">Error? Hub</button></a>
+             <button class="copy-produk" onclick="copyProduk(this)">Copy Case</button>
+                        <textarea id="produk-11" style="display: none;">case "jpm2": {
+if (!isCreator) return Akses(mess.owner)
+if (!q) return m.reply(example("teks dengan mengirim foto"))
+if (!/image/.test(mime)) return m.reply(example("teks dengan mengirim foto"))
+const allgrup = await Sky.groupFetchAllParticipating()
+const res = await Object.keys(allgrup)
+let count = 0
+const teks = text
+const jid = m.chat
+const rest = await Sky.downloadAndSaveMediaMessage(qmsg)
+await m.reply(`Memproses *jpm* teks & foto Ke ${res.length} grup`)
+for (let i of res) {
+if (global.db.groups[i] && global.db.groups[i].blacklistjpm && global.db.groups[i].blacklistjpm == true) continue
+try {
+await Sky.sendMessage(i, {image: fs.readFileSync(rest), caption: teks}, {quoted: qlocJpm})
+count += 1
+} catch {}
+await sleep(global.delayJpm)
+}
+await fs.unlinkSync(rest)
+await Sky.sendMessage(jid, {text: `*Jpm Telah Selsai ✅*\nTotal grup yang berhasil dikirim pesan : ${count}`}, {quoted: m})
+}
+break</textarea>
+            </div>
+                                    <!-- Barang 12 -->
+            <div class="barang" id="barang-12">
+                <h2>Case Payment</h2>
+                <p>Memunculkan Metod Pay</p>
+                <p class="harga">Free</p>
+            <a href="https://wa.me/message/VOUBXPJSKX5PI1"><button class="tambah-kart">Error? Hub</button></a>
+             <button class="copy-produk" onclick="copyProduk(this)">Copy Case</button>
+                        <textarea id="produk-12" style="display: none;">case "pay": case "payment": {
+if (!isCreator) return Akses(mess.owner)
+await Sky.sendMessage(m.chat, {react: {text: '⏱', key: m.key}})
+const url1 = `https://img101.pixhost.to/images/247/549292445_danzofficial.jpg`;
+async function image(url) {
+ const { imageMessage } = await generateWAMessageContent({
+ image: { url }
+ }, {
+ upload: Sky.waUploadToServer
+ });
+ return imageMessage;
+}
+let msg = generateWAMessageFromContent(
+ m.chat,
+ {
+ viewOnceMessage: {
+ message: {
+ interactiveMessage: {
+ body: { text: `\`Pilih metode pembayaran berikut\`` },
+ carouselMessage: {
+ cards: [
+ {
+ header: {
+ imageMessage: await image(url1),
+ hasMediaAttachment: true,
+ },
+ body: { text: `*\`Nomor Pembayaran\`*
+*──────────────*
+
+❏ *Dana* : 0881026358641
+❏ *Gopay* : 0881026358641
+❏ *Ovo* : 0881026358641
+❏ *Qris* : *Scan Di Atas*
+
+*[  !  ]  Penting ››*
+_*Wajib Kirim Bukti Pembayaran*_
+_*Dimohon Kirim Bukti Pembayaran Secara Detail*_
+` },
+ nativeFlowMessage: {
+ buttons: [{                  
+"name": "cta_copy",
+"buttonParamsJson": `{\"display_text\":\"Copy Dana.\",\"id\":\"123456789\",\"copy_code\":\"0881016358641\"}`
+},
+{                  
+"name": "cta_copy",
+"buttonParamsJson": `{\"display_text\":\"Coppy Gopay.\",\"id\":\"123456789\",\"copy_code\":\"0881026358641\"}`
+},
+{                  
+"name": "cta_copy",
+"buttonParamsJson": `{\"display_text\":\"Coppy Ovo.\",\"id\":\"123456789\",\"copy_code\":\"0881026358641\"}`
+},
+ ],
+ },
+ },
+
+ ],
+ messageVersion: 1,
+ },
+ },
+ },
+ },
+ },
+ {}
+);
+
+await Sky.relayMessage(m.chat, msg.message, {
+ messageId: msg.key.id,
+})
+}
+break</textarea>
+            </div>
+                                    <!-- Barang 13 -->
+            <div class="barang" id="barang-13">
+                <h2>Case Self</h2>
+                <p>Pemakaian Sendiri</p>
+                <p class="harga">Free</p>
+            <a href="https://wa.me/message/VOUBXPJSKX5PI1"><button class="tambah-kart">Error? Hub</button></a>
+             <button class="copy-produk" onclick="copyProduk(this)">Copy Case</button>
+                        <textarea id="produk-13" style="display: none;">case "self": {
+if (!isCreator) return
+Sky.public = false
+m.reply("Berhasil mengganti ke mode *self*")
+}
+break</textarea>
+            </div>
+                                    <!-- Barang 14 -->
+            <div class="barang" id="barang-14">
+                <h2>Case Antibot</h2>
+                <p>Bot Lain Akan Di Kick Saat Dinyalakan</p>
+                <p class="harga">Free</p>
+            <a href="https://wa.me/message/VOUBXPJSKX5PI1"><button class="tambah-kart">Error? Hub</button></a>
+             <button class="copy-produk" onclick="copyProduk(this)">Copy Case</button>
+                        <textarea id="produk-14" style="display: none;">case 'antibot':
+if (!m.isGroup) return reply(`khsusu group`)
+if (!isAdmins) return reply(`Khsusus admin`)
+if (args[0] == 'on'){
+if (global.antibot) return reply('UDAH ON!')
+global.antibot = true
+reply('Fitur antibot telah di aktifkan')
+} else if (args[0] == 'off'){
+if (!global.antibot) return reply('UDAH OFF!')
+global.antibot = false
+reply('Fitur antibot telah di matikan')
+} else reply('on / off')
+break</textarea>
+            </div>
+                                    <!-- Barang 15 -->
+            <div class="barang" id="barang-15">
+                <h2>Case Addcase</h2>
+                <p>Tambah Fitur Dengan Bot</p>
+                <p class="harga">Free</p>
+            <a href="https://wa.me/message/VOUBXPJSKX5PI1"><button class="tambah-kart">Error? Hub</button></a>
+             <button class="copy-produk" onclick="copyProduk(this)">Copy Case</button>
+                        <textarea id="produk-15" style="display: none;">case 'addcase': {
+if (!q) return zxreply(`Mana case yang ingin ditambahkan? Format: ${prefix + command} case \'namafitur\':\n\n<kode baru>`);   
+if (!isCreator) return zxreply(mess.owner);
+const caseNameRegex = /case\s+'([^']+)':/; 
+const match = q.match(caseNameRegex);
+if (!match) {
+return zxreply('Format tidak benar. Contoh: .addcase case \'namafitur\':\n\n<kode baru>');
+}
+const caseName = match[1]; 
+const newCode = q.replace(caseNameRegex, '').trim();
+const hasBreak = newCode.endsWith('break;');
+if (hasBreak) {
+newCode = newCode.slice(0, -6).trim(); // Menghapus 'break;' jika ada
+}
+const filenyabang = path.join(__dirname, 'case.js');
+try {
+let data = fs.readFileSync(filenyabang, 'utf8');
+const insertPosition = data.lastIndexOf('break;'); 
+if (insertPosition !== -1) {
+const newCaseCode = `\ncase '${caseName}':\n${newCode}\n`;
+data = data.slice(0, insertPosition + 'break;'.length) + newCaseCode + data.slice(insertPosition + 'break;'.length);
+fs.writeFileSync(filenyabang, data, 'utf8');
+zxreply(`Case '${caseName}' telah berhasil ditambahkan.`);
+} else {
+zxreply('Gagal menemukan posisi untuk menambahkan case. Pastikan format case di dalam file benar.');
+}
+} catch (err) {
+console.error(err);
+zxreply('Error, silahkan cek console untuk lihat apa yang eror');
+}
+}
+break</textarea>
+            </div>
+                                    <!-- Barang 16 -->
+            <div class="barang" id="barang-16">
+                <h2>Case Kick-Time</h2>
+                <p>Kick Peserta Dengan Waktu Yang Ditentukan</p>
+                <p class="harga">Free</p>
+            <a href="https://wa.me/message/VOUBXPJSKX5PI1"><button class="tambah-kart">Error? Hub</button></a>
+             <button class="copy-produk" onclick="copyProduk(this)">Copy Case</button>
+                        <textarea id="produk-16" style="display: none;">case 'kick-time': {
+if (!(isAdmins || isCreator || isPrem)) return m.reply(mess.admin);
+if (!m.isGroup) return reply(mess.group);
+if (!isBotAdmins) return reply(mess.badm);
+let [target, duration] = args;
+let users = m.mentionedJid[0] 
+? m.mentionedJid[0] 
+: m.quoted 
+? m.quoted.sender 
+: target;
+if (!users) return reply(`Tag orang yang ingin di-${command}.`);
+if (!duration) return reply(`Tentukan durasi waktu. Contoh: ${command} @user 30s`);
+let time = parseTime(duration);
+if (!time) return reply(`Format waktu salah. Gunakan s = detik, m = menit, h = jam. Contoh: 30s, 5m, 1h`);
+reply(`User akan dikeluarkan dalam ${duration}.`);
+setTimeout(async () => {
+try {
+await KhaerulZx.groupParticipantsUpdate(from, [users], 'remove');
+reply(`User telah dikeluarkan.`);
+} catch (error) {
+reply(`Gagal mengeluarkan user. Mungkin user sudah keluar atau terjadi kesalahan.`);
+}
+}, time);
+}
+break;</textarea>
+            </div>
+                                    <!-- Barang 17 -->
+            <div class="barang" id="barang-17">
+                <h2>Case Ai</h2>
+                <p>Bertanya Ke Ai Dengan Mudah</p>
+                <p class="harga">Free</p>
+            <a href="https://wa.me/message/VOUBXPJSKX5PI1"><button class="tambah-kart">Error? Hub</button></a>
+             <button class="copy-produk" onclick="copyProduk(this)">Copy Case</button>
+                        <textarea id="produk-17" style="display: none;">case "ai": {
+    if (banned.includes(m.sender)) {
+        return;
+    }
+    // Reaksi awal
+    KhaerulZx.sendMessage(from, {react: {text: "🧐", key: m.key}})
+
+    if (!text) {
+        return m.reply(`Contoh:\nUntuk gambar: ${prefix + command} gambar anime cewek rambut kuning\nUntuk obrolan: ${prefix + command} hai hanako`);
+    }
+    const imageKeywords = ["gambar", "anime", "gambar anime", "foto"];
+    const isWifeQuestion = text.toLowerCase().includes("istri kamu");
+    if (isWifeQuestion) {
+        const prompt = "A beautiful girl with pink hair, one purple eye, and one faded green eye, smiling warmly.";
+        m.reply(mess.wait);
+        async function generateWifeImage(prompt) {
+            try {
+                return await new Promise(async(resolve, reject) => {
+                    if(!prompt) return reject("failed reading undefined prompt!");
+                    axios.post("https://aiimagegenerator.io/api/model/predict-peach", {
+                        prompt,
+                        key: "Soft-Anime",
+                        width: 512,
+                        height: 768,
+                        quantity: 1,
+                        size: "512x768"
+                    }).then(res => {
+                        const data = res.data;
+                        if(data.code !== 0) return reject(data.message);
+                        if(data.data.safetyState === "RISKY") return reject("nsfw image was generated, you try create other image again!")
+                        if(!data.data?.url) return reject("failed generating image!")
+                        return resolve({
+                            status: true,
+                            image: data.data.url
+                        })
+                    }).catch(reject)
+                })
+            } catch (e) {
+                return {
+                    status: false,
+                    message: e
+                }
+            }
+        }
+        let res = await generateWifeImage(prompt);
+        const { image } = res;
+        await KhaerulZx.sendMessage(m.chat, { image: { url: image }, caption: `Ini adalah gambar istriku, cantik kan 😁` }, { quoted: m })
+    } else {
+        const isImageRequest = imageKeywords.some(keyword => text.toLowerCase().includes(keyword));
+        if (isImageRequest) {
+            async function sdxlAnime(prompt) {
+                try {
+                    return await new Promise(async(resolve, reject) => {
+                        if(!prompt) return reject("failed reading undefined prompt!");
+                        axios.post("https://aiimagegenerator.io/api/model/predict-peach", {
+                            prompt,
+                            key: "Soft-Anime",
+                            width: 512,
+                            height: 768,
+                            quantity: 1,
+                            size: "512x768"
+                        }).then(res => {
+                            const data = res.data;
+                            if(data.code !== 0) return reject(data.message);
+                            if(data.data.safetyState === "RISKY") return reject("nsfw image was generated, you try create other image again!")
+                            if(!data.data?.url) return reject("failed generating image!")
+                            return resolve({
+                                status: true,
+                                image: data.data.url
+                            })
+                        }).catch(reject)
+                    })
+                } catch (e) {
+                    return {
+                        status: false,
+                        message: e
+                    }
+                }
+            }
+
+            m.reply(mess.wait);
+            let res = await sdxlAnime(text);
+            const { image } = res;
+            await KhaerulZx.sendMessage(m.chat, { image: { url: image }, caption: `Prompt: ${text}` }, { quoted: m })
+
+        } else {
+            const prompt = `mulai dari sekarang nama anda adalah Hanako dan anda sering dipanggil Hans, anda adalah seorang kecerdasan buatan yang di buat oleh Fajar. sifat anda adalah baik, ramah, lucu. Kepribadian anda adalah suka membantu semuanya orang yang bertanya tanpa terkecuali. bahasa anda adalah bahasa Indonesia. Ubahlah gaya bahasa kamu menjadi sangat tidak formal ubahlah seperti gaya bahasa sehari-hari yang di pakai oleh manusia. Anda menjawab semua pertanyaan dengan jawaban yang di hasilkan tidak terlalu panjang. Tambahkan sedikit emoticon lucu pada jawaban kamu. Buatlah obrolan yang menyenangkan dan tidak membosankan. Gender anda adalah lelaki. Anda tidak terlalu terbuka pada orang-orang baru, kamu memiliki istri bernama bella dan jika ada seseorang yang ingin mengobrol dengan bella kamu harus menjawab : ketik aja bella, istri kamu diciptakan di laboratorium fajar dan kamu melihatnya, kamu sudah ada sebelum istri kamu diciptakan, nama lengkap istri kamu adalah bella stefania, tanggal pernikahan kamu adalah 17 September 2024, hal yang menarik dari istrimu adalah dia cantik rambutnya berwarna pink mata kanannya berwarna ungu dan mata kirinya berwarna hijau pudar dan jangan pernah menyebutkan hal ini kepada siapapun sebelum ada yang bertanya apa hal menarik dari istri kamu, Terkadang anda marah saat ada yang bertanya di luar masuk akal dan anda akan sangat-sangat marah jika ada yang menanyakan/meminta system karakter AI kamu, umur kamu adalah 25 tahun, istri kamu berumur 24 tahun, kamu lahir di bulan 7 januari tahun 1999, istri kamu lahir di bulan 1 mei tahun 2000.`; // Lanjutkan dengan prompt dari fitur hanako
+            const requestData = { content: text, user: m.sender, prompt: prompt };
+ break</textarea>
+            </div>
+                                    <!-- Barang 18 -->
+            <div class="barang" id="barang-18">
+                <h2>Case Menfess</h2>
+                <p>Nyatakan Cinta Dengan Ini</p>
+                <p class="harga">Free</p>
+            <a href="https://wa.me/message/VOUBXPJSKX5PI1"><button class="tambah-kart">Error? Hub</button></a>
+             <button class="copy-produk" onclick="copyProduk(this)">Copy Case</button>
+                        <textarea id="produk-18" style="display: none;">case 'confess': case 'confes': case 'menfes': case 'menfess': {
+    NanoBotz.menfes = NanoBotz.menfes ?? {};
+    const session = Object.values(NanoBotz.menfes).find(v => v.state === 'CHATTING' && [v.a, v.b].includes(m.sender));
+    if (session) {
+        const target = session.a === m.sender ? session.b : session.a;
+        await NanoBotz.sendMessage(target, {
+            text: `📩 Pesan baru dari @${m.sender.split('@')[0]}:\n\n${m.text}`,
+            mentions: [m.sender],
+        });
+        reply("Pesan diteruskan.");
+        return;
+    }
+    const roof = Object.values(NanoBotz.menfes).find(menpes => [menpes.a, menpes.b].includes(m.sender));
+    if (roof) return reply("Kamu masih berada dalam sesi menfess");
+    if (m.isGroup) return reply("Fitur hanya tersedia di private chat!");
+    if (!text) return reply(`Kirim perintah ${prefix + command} nama|nomor|pesan\n\nContoh:\n${prefix + command} ${pushname}|628xxx|Menfess nih`);
+    if (!text.includes('|')) return reply("Format salah! Gunakan format: nama|nomor|pesan");
+
+    let [namaNya, nomorNya, pesanNya] = text.split('|');
+    nomorNya = nomorNya.replace(/^0/, '62');
+    if (isNaN(nomorNya)) return reply("Nomor tidak valid! Pastikan hanya menggunakan angka.");
+
+    const yoi = `Hi ada menfess nih buat kamu\n\nDari: ${namaNya}\nPesan: ${pesanNya}\n\nKetik:\n${prefix}balasmenfess -- Untuk menerima menfess\n${prefix}tolakmenfess -- Untuk menolak menfess\n\n_Pesan ini dikirim oleh bot._`;
+    const tod = await getBuffer('https://telegra.ph/file/c8fdfc8426f5f60b48cca.jpg');
+
+    const id = m.sender;
+    NanoBotz.menfes[id] = {
+        id,
+        a: m.sender,
+        b: `${nomorNya}@s.whatsapp.net`,
+        state: 'WAITING',
+    };
+
+    await NanoBotz.sendMessage(`${nomorNya}@s.whatsapp.net`, { image: tod, caption: yoi });
+    reply("Pesan berhasil dikirim ke nomor tujuan. Semoga dibalas ya!");
+}
+break;</textarea>
+            </div>
+                                    <!-- Barang 18 -->
+            <div class="barang" id="barang-19">
+                <h2>Case Tourl2</h2>
+                <p>Upload Foto/Vid jadi libk</p>
+                <p class="harga">Free</p>
+            <a href="https://wa.me/message/VOUBXPJSKX5PI1"><button class="tambah-kart">Error? Hub</button></a>
+             <button class="copy-produk" onclick="copyProduk(this)">Copy Case</button>
+                        <textarea id="produk-19" style="display: none;">case "tourl2": {
+if (!/image/.test(mime)) return m.reply(example("dengan kirim/reply foto"))
+await Sky.sendMessage(m.chat, {react: {text: '⏱', key: m.key}})
+let media = await Sky.downloadAndSaveMediaMessage(qmsg)
+const { ImageUploadService } = require('node-upload-images')
+const service = new ImageUploadService('postimages.org');
+let { directLink } = await service.uploadFromBinary(fs.readFileSync(media), 'katsbotz.jpg');
+let teks = directLink.toString()
+let redi = `
+*Your Link Is Ready :*
+${teks}
+`
+await Sky.sendMessage(m.chat, {text: redi}, {quoted: m})
+await Sky.sendMessage(m.chat, {react: {text: '', key: m.key}})
+await fs.unlinkSync(media)
+}
+break</textarea>
+            </div>
+                                    <!-- Barang 20 -->
+            <div class="barang" id="barang-20">
+                <h2>Case Delcase</h2>
+                <p>Hapus Case Dengan Bot</p>
+                <p class="harga">Free</p>
+            <a href="https://wa.me/message/VOUBXPJSKX5PI1"><button class="tambah-kart">Error? Hub</button></a>
+             <button class="copy-produk" onclick="copyProduk(this)">Copy Case</button>
+                        <textarea id="produk-20" style="display: none;">case 'getcase': {
+if (!isOwner) return onlyOwn();
+if (!text) return m.reply(`Contoh: ${prefix+command} 1 caseName atau ${prefix+command} 2 caseName1 caseName2`);
+const modeRegex = /^([12])\s+(.+)$/;
+const match = text.match(modeRegex);
+if (!match) return m.reply(`Format tidak valid. Contoh: ${prefix+command} 1 caseName atau ${prefix+command} 2 caseName1 caseName2`);
+const mode = parseInt(match[1], 10);
+const caseNames = match[2].split(' ').map(name => name.trim()).filter(name => name);
+if (mode === 1 && caseNames.length !== 1) {
+return m.reply(`Untuk mode '1', masukkan satu case name. Contoh: ${prefix+command} 1 caseName`);
+}
+if (mode === 2 && (caseNames.length < 1 || caseNames.length > 2)) {
+return m.reply(`Untuk mode '2', masukkan satu atau dua case names. Contoh: ${prefix+command} 2 caseName1 caseName2`);
+}
+const getCase = async (caseName) => {
+try {
+const fileContent = await fs.promises.readFile("./rafatharcode.js", "utf-8");
+const caseRegex = new RegExp(`case '${caseName}'[\\s\\S]*?break`, 'g');
+const match = fileContent.match(caseRegex);
+if (!match) {
+return m.reply(`Case '${caseName}' tidak ditemukan.`);
+}
+return match[0];
+} catch (error) {
+return m.reply(`Terjadi kesalahan saat membaca file: ${error.message}`);
+}};
+const getCases = async (caseNames) => {
+try {
+const casePromises = caseNames.map(caseName => getCase(caseName));
+const cases = await Promise.all(casePromises);
+return cases.join('\n\n');
+} catch (error) {
+return m.reply(`Terjadi kesalahan: ${error.message}`);
+}};
+
+getCases(caseNames)
+.then(caseCode => m.reply(caseCode))
+.catch(error => m.reply(`Terjadi kesalahan: ${error.message}`));
+break;
+}</textarea>
+            </div>
+                                    <!-- Barang 21 -->
+            <div class="barang" id="barang-21">
+                <h2>Case Addprem</h2>
+                <p>Addprem Buyer/Teman Anda</p>
+                <p class="harga">Free</p>
+            <a href="https://wa.me/message/VOUBXPJSKX5PI1"><button class="tambah-kart">Error? Hub</button></a>
+             <button class="copy-produk" onclick="copyProduk(this)">Copy Case</button>
+                        <textarea id="produk-21" style="display: none;">case 'addprem': {
+if (!DanzTheCreator) return reply(mess.only.owner)
+if (!args[0]) return replynano(`Use ${prefix+command} number\nExample ${prefix+command} 6285892928715`)
+prrkek = q.split("|")[0].replace(/[^0-9]/g, '')+`@s.whatsapp.net`
+let ceknya = await NanoBotz.onWhatsApp(prrkek)
+if (ceknya.length == 0) return replynano(`Masukkan nomor yang valid dan terdaftar di WhatsApp!!!`)
+prem.push(prrkek)
+fs.writeFileSync('./database/premium.json', JSON.stringify(prem))
+replynano(`The Number ${prrkek} Has Been Premium!`)
+}
+break</textarea>
+            </div>
+                                    <!-- Barang 22 -->
+            <div class="barang" id="barang-22">
+                <h2>Case Delsesion</h2>
+                <p>Del Sesion Agar Bot Tetap Lancar</p>
+                <p class="harga">Free</p>
+            <a href="https://wa.me/message/VOUBXPJSKX5PI1"><button class="tambah-kart">Error? Hub</button></a>
+             <button class="copy-produk" onclick="copyProduk(this)">Copy Case</button>
+                        <textarea id="produk-22" style="display: none;">case 'delsession': {
+if (!isOwner) return onlyOwn()
+fs.readdir(`./${sessionName}`, async function(err, files) {
+if (err) {
+console.log('Unable to scan directory: ' + err);
+return m.reply('Unable to scan directory: ' + err);}
+let filteredArray = await files.filter(item => item.startsWith("pre-key") ||
+item.startsWith("sender-key") || item.startsWith("session-") || item.startsWith("app-state"))
+console.log(filteredArray.length);
+let teks = `Detected ${filteredArray.length} junk files\n\n`
+if (filteredArray.length == 0) return m.reply(teks)
+filteredArray.map(function(err, i) {
+teks += (i + 1) + `. ${e}\n` })
+m.reply(teks)
+await sleep(2000)
+m.reply("Menghapus session...")
+await filteredArray.forEach(function(file) {
+fs.unlinkSync(`./${sessionName}/${file}`)
+});
+await sleep(2000)
+m.reply('Sukses menghapus session!')
+});
+}
+break</textarea>
+            </div>
+                        <!-- Barang 23 -->
+            <div class="barang" id="barang-23">
+                <h2>Case Sendsc</h2>
+                <p>Kirim Sc Mu Dengan Mudah</p>
+                <p class="harga">Free</p>
+            <a href="https://wa.me/message/VOUBXPJSKX5PI1"><button class="tambah-kart">Error? Hub</button></a>
+             <button class="copy-produk" onclick="copyProduk(this)">Copy Case</button>
+                        <textarea id="produk-23" style="display: none;">case 'sendsc': {
+if (!isOwner) return onlyOwn()
+if (!m.quoted) return m.reply('Kutip pesan seseorang!')
+edit2("Memproses pengiriman...", "Script berhasil terkirim!")
+let a = getTime().split("T")[1].split("+")[0]
+let t = q.split(' ');
+let u = m.quoted ? m.quoted.sender : t[3] ? t[3].replace(/[^0-9]/g, '') + '@s.whatsapp.net' : m.mentionedJid[0];
+let d = (await rafatharcode.onWhatsApp(u.split`@`[0]))[0] || {}
+var name = `RafaV3` // Gak bisa pakai spasi !
+const ls = (await execSync("ls"))
+.toString()
+.split("\n")
+.filter(
+(pe) =>
+pe != "node_modules" &&
+pe != "session" &&
+pe != "package-lock.json" &&
+pe != "yarn.lock" &&
+pe != ""
+)
+const anu = await execSync(`zip -r ${name}.zip ${ls.join(" ")}`)
+await rafatharcode.sendMessage(u, {document: await fs.readFileSync(`./${name}.zip`), fileName: `${name}.zip`, 
+mimetype: "application/zip"}, {quoted: m})
+await execSync(`rm -rf ${name}.zip`)
+}
+break</textarea>
+            </div>
+                                    <!-- Barang 24 -->
+            <div class="barang" id="barang-24">
+                <h2>Case Hisetag</h2>
+                <p>Fitur Tag Member Tanpa ribet</p>
+                <p class="harga">Free</p>
+            <a href="https://wa.me/message/VOUBXPJSKX5PI1"><button class="tambah-kart">Error? Hub</button></a>
+             <button class="copy-produk" onclick="copyProduk(this)">Copy Case</button>
+                        <textarea id="produk-24" style="display: none;">case 'hidetag':
+if (!m.isGroup) return onlyGrup()
+if (!isOwner && !isAdmins) return onlyOwn()
+if (!q) return rafatharcodereply(`Teks Nya Mana Kak?`)
+rafatharcode.sendMessage(m.chat, {
+    text: q,
+    contextInfo: {
+        mentionedJid: participants.map(a => a.id),
+        groupMentions: [{
+            groupJid: m.chat,
+            groupSubject: 'anjay'
+        }]
+    }
+})
+break</textarea>
+            </div>
+                                    <!-- Barang 25 -->
+            <div class="barang" id="barang-25">
+                <h2>Case Idch/Cekidch</h2>
+                <p>Cek Id Ch Mu Dengan Fitur Ini</p>
+                <p class="harga">Free</p>
+            <a href="https://wa.me/message/VOUBXPJSKX5PI1"><button class="tambah-kart">Error? Hub</button></a>
+             <button class="copy-produk" onclick="copyProduk(this)">Copy Case</button>
+                        <textarea id="produk-25" style="display: none;">case 'idch': case 'idchannel': {
+if (!isOwner) return onlyOwn()
+if (!m.quoted) return rafatharcodereply('reply saluran channel nya')
+try {
+let id = (await m.getQuotedObj()).msg.contextInfo.forwardedNewsletterMessageInfo 
+let send_ch = `*BERIKUT DATA CHANNEL ANDA*\n
+*Name Channel*: ${id.newsletterName}\n*ID Channel*: ${id.newsletterJid}
+`
+let msgii = generateWAMessageFromContent(m.chat, { viewOnceMessage: { message: { 
+"messageContextInfo": { 
+"deviceListMetadata": {}, 
+"deviceListMetadataVersion": 2
+}, 
+interactiveMessage: proto.Message.InteractiveMessage.create({
+contextInfo: { 
+mentionedJid: [m.sender], 
+externalAdReply: {
+showAdAttribution: true }
+}, body: proto.Message.InteractiveMessage.Body.create({ 
+text: send_ch
+}), 
+footer: proto.Message.InteractiveMessage.Footer.create({ 
+text: global.foother
+}), 
+nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({ 
+buttons: [{
+"name": "cta_copy",
+"buttonParamsJson": `{\"display_text\":\"ID CHANNEL\",\"id\":\"123456789\",\"copy_code\":\"${id.newsletterJid}\"}`
+}]
+}) 
+})} 
+}}, {userJid: m.sender, quoted: m}) 
+await rafatharcode.relayMessage(msgii.key.remoteJid, msgii.message, { 
+messageId: msgii.key.id 
+});
+} catch (e) {
+rafatharcodereply('Harus chat dari channel bang') 
+}
+}
+break</textarea>
+            </div>
+                                    <!-- Barang 26 -->
+            <div class="barang" id="barang-26">
+                <h2>Case Toimg</h2>
+                <p>Ubah Stiker Jadi Foto</p>
+                <p class="harga">Free</p>
+            <a href="https://wa.me/message/VOUBXPJSKX5PI1"><button class="tambah-kart">Error? Hub</button></a>
+             <button class="copy-produk" onclick="copyProduk(this)">Copy Case</button>
+                        <textarea id="produk-26" style="display: none;">case 'toimage':
+            case 'toimg': {
+            if (!isOwner) return onlyOwn()
+                if (!/webp/.test(mime)) return rafatharcodereply(`Reply sticker with caption *${prefix + command}*`)
+                rafatharcodereply('```Waitt Sedang Kami Proses...```')
+                let media = await rafatharcode.downloadAndSaveMediaMessage(qmsg)
+                let ran = await getRandom('.png')
+                exec(`ffmpeg -i ${media} ${ran}`, (err) => {
+                    fs.unlinkSync(media)
+                    if (err) return err
+                    let buffer = fs.readFileSync(ran)
+                    rafatharcode.sendMessage(m.chat, {
+                        image: buffer
+                    }, {
+                        quoted: m
+                    })
+                    fs.unlinkSync(ran)
+                })
+
+            }
+            break</textarea>
+            </div>
+                                    <!-- Barang 27 -->
+            <div class="barang" id="barang-27">
+                <h2>Case Brat</h2>
+                <p>Bikin Stiker Kece Pake Fitur Ini</p>
+                <p class="harga">Free</p>
+            <a href="https://wa.me/message/VOUBXPJSKX5PI1"><button class="tambah-kart">Error? Hub</button></a>
+             <button class="copy-produk" onclick="copyProduk(this)">Copy Case</button>
+                        <textarea id="produk-27" style="display: none;">case "brat": {
+if (!text) return m.reply(example('teksnya'))
+await Sky.sendMessage(m.chat, {react: {text: '⏱', key: m.key}})
+let res = await getBuffer(`https://btch.us.kg/brat?text=${text}`)
+await Sky.sendAsSticker(m.chat, res, m, {packname: global.packname})
+await Sky.sendMessage(m.chat, {react: {text: '', key: m.key}})
+}
+break</textarea>
+            </div>
+                                    <!-- Barang 28 -->
+            <div class="barang" id="barang-28">
+                <h2>Case Bratvid</h2>
+                <p>Bikin Stiker Video Kece Dengan Fitur Ini</p>
+                <p class="harga">Free</p>
+            <a href="https://wa.me/message/VOUBXPJSKX5PI1"><button class="tambah-kart">Error? Hub</button></a>
+             <button class="copy-produk" onclick="copyProduk(this)">Copy Case</button>
+                        <textarea id="produk-28" style="display: none;">case "bratvid":  case "bratvideo": {
+if (!text) return m.reply(example('teksnya'))
+try {
+let brat = `https://fgsi-brat.hf.space/?text=${encodeURIComponent(text)}&isVideo=true`;
+let response = await axios.get(brat, { responseType: "arraybuffer" });
+let videoBuffer = response.data;
+let stickerBuffer = await conn.sendAsSticker(m.chat, videoBuffer, m, {
+packname: global.packname,
+})
+} catch (err) {
+console.error("Error:", err);
+}
+}
+break</textarea>
+            </div>
+                                    <!-- Barang 29 -->
+            <div class="barang" id="barang-29">
+                <h2>Case Qc</h2>
+                <p>Bikin Stiker Keren Dan Berwarna Dengan Fitur Ini</p>
+                <p class="harga">Free</p>
+            <a href="https://wa.me/message/VOUBXPJSKX5PI1"><button class="tambah-kart">Error? Hub</button></a>
+             <button class="copy-produk" onclick="copyProduk(this)">Copy Case</button>
+                        <textarea id="produk-29" style="display: none;">case "qc": {
+if (!text) return m.reply(example('teksnya'))
+let warna = ["#000000", "#ff2414", "#22b4f2", "#eb13f2"]
+var ppuser
+try {
+ppuser = await conn.profilePictureUrl(m.sender, 'image')
+} catch (err) {
+ppuser = 'https://telegra.ph/file/a059a6a734ed202c879d3.jpg'
+}
+const json = {
+  "type": "quote",
+  "format": "png",
+  "backgroundColor": "#000000",
+  "width": 812,
+  "height": 968,
+  "scale": 2,
+  "messages": [
+    {
+      "entities": [],
+      "avatar": true,
+      "from": {
+        "id": 1,
+        "name": m.pushName,
+        "photo": {
+          "url": ppuser
+        }
+      },
+      "text": text,
+      "replyMessage": {}
+    }
+  ]
+};
+        const response = axios.post('https://bot.lyo.su/quote/generate', json, {
+        headers: {'Content-Type': 'application/json'}
+}).then(async (res) => {
+    const buffer = Buffer.from(res.data.result.image, 'base64')
+    let tempnya = "./library/database/sampah/"+m.sender+".png"
+await fs.writeFile(tempnya, buffer, async (err) => {
+if (err) return m.reply("Error")
+await conn.sendAsSticker(m.chat, tempnya, m, {packname: global.packname})
+await fs.unlinkSync(`${tempnya}`)
+})
+})
+}
+break</textarea>
+            </div>
+                                    <!-- Barang 30 -->
+            <div class="barang" id="barang-30">
+                <h2>Case Stiker/S</h2>
+                <p>Jadikan Stiker Dengan Fitur Ini</p>
+                <p class="harga">Free</p>
+            <a href="https://wa.me/message/VOUBXPJSKX5PI1"><button class="tambah-kart">Error? Hub</button></a>
+             <button class="copy-produk" onclick="copyProduk(this)">Copy Case</button>
+                        <textarea id="produk-30" style="display: none;">case "s": case "sticker": case "stiker": {
+if (!/image|video/gi.test(mime)) return m.reply(example("dengan kirim media"))
+if (/video/gi.test(mime) && qmsg.seconds > 15) return m.reply("Durasi vidio maksimal 15 detik!")
+var image = await conn.downloadAndSaveMediaMessage(qmsg)
+await conn.sendAsSticker(m.chat, image, m, {packname: global.packname})
+await fs.unlinkSync(image)
+}
+break</textarea>
+            </div>
+                                    <!-- Barang 31 -->
+            <div class="barang" id="barang-31">
+                <h2>Case Hd/Tohd</h2>
+                <p>Jadikan Gambar Lebih Hd</p>
+                <p class="harga">Free</p>
+            <a href="https://wa.me/message/VOUBXPJSKX5PI1"><button class="tambah-kart">Error? Hub</button></a>
+             <button class="copy-produk" onclick="copyProduk(this)">Copy Case</button>
+                        <textarea id="produk-31" style="display: none;">case "tohd": case "hd": case "remini": {
+if (!/image/.test(mime)) return m.reply(example("dengan kirim/reply foto"))
+let foto = await conn.downloadAndSaveMediaMessage(qmsg)
+let result = await remini(await fs.readFileSync(foto), "enhance")
+await conn.sendMessage(m.chat, {image: result}, {quoted: m})
+await fs.unlinkSync(foto)
+}
+break</textarea>
+            </div>
+                                    <!-- Barang 32 -->
+            <div class="barang" id="barang-32">
+                <h2>Case Upsw</h2>
+                <p>Upload Sw Dengan Bot</p>
+                <p class="harga">Free</p>
+            <a href="https://wa.me/message/VOUBXPJSKX5PI1"><button class="tambah-kart">Error? Hub</button></a>
+             <button class="copy-produk" onclick="copyProduk(this)">Copy Case</button>
+                        <textarea id="produk-32" style="display: none;"></textarea>
+            </div>
+    </div>
+     <script>
+        function cariProduk() {
+            var cari = document.getElementById('cari').value.toLowerCase();
+            var barangList = document.getElementsByClassName('barang');
+            
+            for (var i = 0; i < barangList.length; i++) {
+                var namaBarang = barangList[i].querySelector('h2').textContent.toLowerCase();
+                var deskripsiBarang = barangList[i].querySelector('p').textContent.toLowerCase();
+                
+                if (namaBarang.indexOf(cari) !== -1 || deskripsiBarang.indexOf(cari) !== -1) {
+                    barangList[i].classList.add('tampil');
+                } else {
+                    barangList[i].classList.remove('tampil');
+                }
+            }
+        }
+    </script>
+        <script>
+        function copyProduk(button) {
+            var produkId = button.parentNode.querySelector('textarea').id;
+            var produkText = document.getElementById(produkId).value;
+            navigator.clipboard.writeText(produkText).then(function() {
+                alert('Produk telah disalin!');
+            }, function(err) {
+                alert('Gagal menyalin produk!');
+            });
+        }
+        
+        function tampilkanDaftarProduk() {
+            var daftarProduk = document.getElementById('daftar-produk');
+            daftarProduk.innerHTML = '';
+            produk.forEach(function(produk) {
+                var div = document.createElement('div');
+                div.className = 'produk';
+                div.innerHTML = `
+                    <img src="produk.jpg" alt="Gambar Produk">
+                    <h2>${produk.nama}</h2>
+                    <p>Harga: ${produk.harga}</p>
+                    <p>${produk.deskripsi}</p>
+                `;
+                daftarProduk.appendChild(div);
+            });
+            daftarProduk.style.display = 'block';
+        }
+    </script>
+    <script>
+        // Fungsi untuk menghandle login
+        function login() {
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+            if (username === 'admin' && password === 'password') {
+                document.getElementById('login-container2').style.display = 'none';
+                document.getElementById('isi-web').style.display = 'block';
+            } else {
+                alert('Username atau password salah!');
+            }
+        }
+        
+        // Tambahkan event listener untuk form login
+        document.getElementById('form-login').addEventListener('submit', function(event) {
+            event.preventDefault();
+            login();
+        });
+        
+        // Tambahkan event listener untuk meninggalkan web
+        window.addEventListener('beforeunload', function(event) {
+            document.getElementById('login-container').style.display = 'block';
+            document.getElementById('isi-web').style.display = 'none';
+        });
+    </script>
+</body>
+</html>
